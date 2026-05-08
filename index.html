@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Aryan Shah - Aspiring AI/ML Engineer building production-ready AI systems, RAG applications, and scalable ML infrastructure."
+    />
+    <meta name="theme-color" content="#08111f" />
+    <title>Aryan Shah | AI/ML Engineer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="loader" aria-label="Loading portfolio">
+      <div class="loader__ring"></div>
+      <span>Initializing portfolio</span>
+    </div>
+
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <canvas id="particle-canvas" aria-hidden="true"></canvas>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-outline" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+      <nav class="navbar container" aria-label="Primary navigation">
+        <a class="brand" href="#hero" aria-label="Aryan Shah home">
+          <span class="brand__mark">AS</span>
+          <span>Aryan Shah</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-menu">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#education" class="nav-link">Education</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" id="hero">
+        <div class="container hero__grid">
+          <div class="hero__content reveal">
+            <p class="eyebrow">AI systems | ML infrastructure | Production engineering</p>
+            <h1>Aryan Shah</h1>
+            <div class="hero__title">
+              <span>Aspiring</span>
+              <span class="typing-text" aria-live="polite"></span>
+            </div>
+            <p class="hero__tagline">
+              Building production-ready AI systems and scalable ML applications.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#projects">
+                <span>View Projects</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </a>
+              <a class="btn btn--secondary" href="#contact">
+                <span>Contact Me</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 4h16v16H4z" />
+                  <path d="m4 7 8 6 8-6" />
+                </svg>
+              </a>
+            </div>
+            <div class="social-row" aria-label="Social links">
+              <a href="https://github.com/aryanshah2109" target="_blank" rel="noreferrer" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.18-3.37-1.18-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.35 1.08 2.92.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03A9.54 9.54 0 0 1 12 6.99c.85 0 1.7.11 2.5.34 1.9-1.3 2.74-1.03 2.74-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.69 0 3.85-2.34 4.69-4.57 4.94.36.31.68.92.68 1.86v2.57c0 .27.18.58.69.48A10 10 0 0 0 12 2Z" />
+                </svg>
+              </a>
+              <a href="http://www.linkedin.com/in/aryan-shah-3674031ba/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6Z" />
+                  <path d="M2 9h4v12H2z" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </a>
+              <a href="mailto:aryanrshah2109@gmail.com" aria-label="Email Aryan Shah">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 4h16v16H4z" />
+                  <path d="m4 7 8 6 8-6" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero__visual reveal">
+            <div class="profile-card glass">
+              <img src="assets/profile.jpeg" alt="Abstract portrait placeholder for Aryan Shah" />
+              <div class="profile-card__status">
+                <span></span>
+                Available for AI/ML internships
+              </div>
+              <div class="signal-card signal-card--top">RAG systems</div>
+              <div class="signal-card signal-card--bottom">Sub-100ms APIs</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="container section-grid">
+          <div class="section-heading reveal">
+            <p class="eyebrow">About</p>
+            <h2>I build AI systems with engineering discipline.</h2>
+          </div>
+          <div class="about__content reveal glass">
+            <div class="about__intro">
+              <p>
+                I am an aspiring AI/ML Engineer focused on turning models into reliable,
+                production-ready systems. I work with RAG applications, FastAPI services,
+                LangChain and LlamaIndex pipelines, and applied ML using TensorFlow, PyTorch,
+                and Scikit-Learn.
+              </p>
+              <p>
+                I care about scalable AI infrastructure, robust evaluation, and deployment
+                workflows that make ML systems faster, safer, and easier to operate. I have also
+                led a 7-member development team, balancing technical execution with coordination
+                and product delivery.
+              </p>
+            </div>
+            <div class="about-focus">
+              <article>
+                <span>01</span>
+                <h3>Production AI</h3>
+                <p>I design AI workflows around validation, latency, and predictable outputs.</p>
+              </article>
+              <article>
+                <span>02</span>
+                <h3>RAG & LLM Apps</h3>
+                <p>I build retrieval and prompt pipelines using LangChain, LlamaIndex, and FastAPI.</p>
+              </article>
+              <article>
+                <span>03</span>
+                <h3>Team Delivery</h3>
+                <p>I lead with ownership, clear communication, and measurable engineering outcomes.</p>
+              </article>
+            </div>
+            <div class="stats-grid">
+              <div>
+                <strong>7</strong>
+                <span>Developers led</span>
+              </div>
+              <div>
+                <strong>45%</strong>
+                <span>LLM inconsistency reduction</span>
+              </div>
+              <div>
+                <strong>96%</strong>
+                <span>FraudDetect PR-AUC</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section-heading section-heading--center reveal">
+            <p class="eyebrow">Skills</p>
+            <h2>Tooling across model development, APIs, and deployment.</h2>
+          </div>
+          <div class="skills-grid">
+            <article class="skill-card reveal">
+              <h3>Programming Languages</h3>
+              <div class="chip-list">
+                <span>Python</span><span>Java</span><span>SQL</span><span>C</span>
+              </div>
+            </article>
+            <article class="skill-card reveal">
+              <h3>AI/ML</h3>
+              <div class="chip-list">
+                <span>TensorFlow</span><span>PyTorch</span><span>Scikit-Learn</span>
+                <span>LangChain</span><span>LlamaIndex</span><span>NLP</span><span>RAG</span>
+                <span>Finetuning</span>
+              </div>
+            </article>
+            <article class="skill-card reveal">
+              <h3>MLOps</h3>
+              <div class="chip-list">
+                <span>FastAPI</span><span>Docker</span><span>MLflow</span><span>DVC</span>
+                <span>CI/CD</span><span>Kubernetes</span><span>AWS</span>
+              </div>
+            </article>
+            <article class="skill-card reveal">
+              <h3>Data & Visualization</h3>
+              <div class="chip-list">
+                <span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Seaborn</span>
+                <span>EDA</span>
+              </div>
+            </article>
+            <article class="skill-card reveal">
+              <h3>Web Development</h3>
+              <div class="chip-list">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span>
+              </div>
+            </article>
+            <article class="skill-card reveal">
+              <h3>Tools</h3>
+              <div class="chip-list">
+                <span>Git</span><span>GitHub</span><span>VS Code</span><span>Jupyter</span>
+                <span>Hugging Face</span><span>DagsHub</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="container section-grid">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Experience</p>
+            <h2>Applied ML across structured data and images.</h2>
+          </div>
+          <div class="timeline reveal">
+            <article class="timeline-item glass">
+              <div class="timeline-dot"></div>
+              <div>
+                <span class="timeline-date">June 2025 - July 2025</span>
+                <h3>Prodigy Infotech</h3>
+                <p>Machine Learning Intern</p>
+                <ul>
+                  <li>Built and evaluated ML models for regression, classification, and clustering.</li>
+                  <li>Worked with image and tabular datasets across model experimentation workflows.</li>
+                  <li>Achieved approximately 90% model accuracy on evaluated tasks.</li>
+                  <li>Improved feature understanding and model decisions using exploratory data analysis.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects" id="projects">
+        <div class="container">
+          <div class="section-heading section-heading--center reveal">
+            <p class="eyebrow">Projects</p>
+            <h2>Projects where I focused on reliability, latency, and usable AI.</h2>
+          </div>
+          <div class="filter-bar reveal" aria-label="Project filters">
+            <button class="filter-btn is-active" type="button" data-filter="all">All</button>
+            <button class="filter-btn" type="button" data-filter="ai">AI Platforms</button>
+            <button class="filter-btn" type="button" data-filter="mlops">MLOps</button>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card reveal" data-category="ai">
+              <div class="project-card__top">
+                <span class="project-index">01</span>
+                <span class="project-badge">Team Lead</span>
+              </div>
+              <h3>ExamEcho</h3>
+              <p>
+                I led development of an AI-powered examination platform for question generation, rubric generation,
+                answer evaluation, and speech-enabled examination workflows.
+              </p>
+              <div class="project-metrics">
+                <div><strong>45%</strong><span>Fewer LLM inconsistencies</span></div>
+                <div><strong>4s</strong><span>Optimized response latency</span></div>
+              </div>
+              <ul class="project-list">
+                <li>Integrated TTS/STT flows for accessible examination interactions.</li>
+                <li>Led a team of 7 developers across backend, AI, and platform delivery.</li>
+                <li>Reduced latency from roughly 8s to 4s through prompt optimization and structured validation.</li>
+              </ul>
+              <div class="tech-stack">
+                <span>LangChain</span><span>HuggingFace</span><span>FastAPI</span><span>React</span>
+                <span>Node.js</span><span>MongoDB</span><span>AWS</span>
+              </div>
+              <div class="project-actions">
+                <a class="btn btn--small" href="https://github.com/aryanshah2109/STT-TTS-exam-portal" target="_blank" rel="noreferrer">GitHub</a>
+                <a class="btn btn--small btn--ghost" href="https://www.linkedin.com/feed/update/urn:li:activity:7455627571247079424/" target="_blank" rel="noreferrer" aria-label="ExamEcho live demo LinkedIn post">Live Demo</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal" data-category="mlops">
+              <div class="project-card__top">
+                <span class="project-index">02</span>
+                <span class="project-badge">Production ML</span>
+              </div>
+              <h3>FraudDetect</h3>
+              <p>
+                I built a production-grade fraud detection system with threshold optimization, low-latency
+                inference, experiment tracking, and repeatable deployment workflows.
+              </p>
+              <div class="project-metrics">
+                <div><strong>96%</strong><span>PR-AUC performance</span></div>
+                <div><strong>&lt;100ms</strong><span>Inference latency</span></div>
+              </div>
+              <ul class="project-list">
+                <li>Optimized precision-recall thresholding for better fraud-risk decisions.</li>
+                <li>Built a full MLOps pipeline with MLflow, DVC, Docker, and GitHub Actions.</li>
+                <li>Designed FastAPI inference endpoints for reliable deployment.</li>
+              </ul>
+              <div class="tech-stack">
+                <span>XGBoost</span><span>FastAPI</span><span>MLflow</span><span>DVC</span>
+                <span>Docker</span><span>GitHub Actions</span>
+              </div>
+              <div class="project-actions project-actions--wrap">
+                <a class="btn btn--small" href="https://github.com/aryanshah2109/FraudDetect" target="_blank" rel="noreferrer">GitHub</a>
+                <a class="btn btn--small btn--ghost" href="https://frauddetect-1gju.onrender.com/" target="_blank" rel="noreferrer">Live Website</a>
+                <a class="btn btn--small btn--ghost" href="https://frauddetect-backend-jpgf.onrender.com/docs" target="_blank" rel="noreferrer">Backend Docs</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="certifications">
+        <div class="container">
+          <div class="section-heading section-heading--center reveal">
+            <p class="eyebrow">Certifications</p>
+            <h2>Certifications that strengthen my AI fundamentals and applied thinking.</h2>
+          </div>
+          <div class="cert-grid">
+            <article class="cert-card reveal">
+              <span>Edunet Foundations</span>
+              <h3>Green Skills and Artificial Intelligence</h3>
+              <p>
+                I completed this Skills4Future foundation course at Vishwakarma Govt.
+                Engineering College GKS, covering the intersection of sustainable technology,
+                green skills, and AI applications.
+              </p>
+              <div class="cert-meta">
+                <span>Issued: September 2025</span>
+                <span>Program: Skills4Future</span>
+              </div>
+            </article>
+            <article class="cert-card reveal">
+              <span>IBM SkillsBuild</span>
+              <h3>Getting Started with Artificial Intelligence</h3>
+              <p>
+                I completed IBM SkillsBuild training focused on foundational AI concepts,
+                real-world use cases, and responsible adoption of artificial intelligence.
+              </p>
+              <div class="cert-meta">
+                <span>Issued: 29 Jan 2025</span>
+                <a href="https://www.credly.com/go/2LnQgp6n" target="_blank" rel="noreferrer">Verify credential</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section education" id="education">
+        <div class="container section-grid">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Education</p>
+            <h2>I am building my academic foundation in information technology.</h2>
+          </div>
+          <article class="education-card glass reveal">
+            <span class="timeline-date">2023 - 2027</span>
+            <h3>Bachelor of Engineering in Information Technology</h3>
+            <p>VGEC (GTU)</p>
+            <strong>CGPA: 8.66</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="container contact__grid">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Contact</p>
+            <h2>Let’s build reliable AI systems.</h2>
+            <p class="section-copy">
+              Open to AI/ML internships, applied ML roles, and startup engineering opportunities.
+            </p>
+            <div class="contact-list">
+              <a href="mailto:aryanrshah2109@gmail.com">aryanrshah2109@gmail.com</a>
+              <a href="http://www.linkedin.com/in/aryan-shah-3674031ba/" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a href="https://github.com/aryanshah2109" target="_blank" rel="noreferrer">GitHub</a>
+              <span>Ahmedabad, India</span>
+            </div>
+          </div>
+          <form class="contact-form glass reveal" id="contact-form">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required />
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="your.email@example.com" required />
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about the opportunity..." required></textarea>
+            <button class="btn btn--primary" type="submit">
+              <span>Send Message</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m22 2-7 20-4-9-9-4Z" />
+                <path d="M22 2 11 13" />
+              </svg>
+            </button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__inner">
+        <p>Copyright <span id="year"></span> Aryan Shah.</p>
+        <div class="footer-links">
+          <a href="https://github.com/aryanshah2109" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="http://www.linkedin.com/in/aryan-shah-3674031ba/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="mailto:aryanrshah2109@gmail.com">Email</a>
+        </div>
+      </div>
+    </footer>
+
+    <button class="back-to-top" type="button" aria-label="Back to top">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="m18 15-6-6-6 6" />
+      </svg>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
