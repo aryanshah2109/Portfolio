@@ -6,7 +6,7 @@ const nodemailer = require("nodemailer");
 loadEnvFile();
 
 const PORT = Number(process.env.PORT || 3000);
-const ROOT = __dirname;
+const ROOT = path.join(__dirname, "public");
 const MAX_BODY_SIZE = 1024 * 32;
 const CONTACT_RECEIVER = process.env.CONTACT_RECEIVER || "aryanrshah2109@gmail.com";
 

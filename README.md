@@ -8,10 +8,11 @@ Static HTML, CSS, and JavaScript portfolio with email-enabled contact form suppo
 Portfolio/
   api/
     contact.mjs
-  assets/
-  index.html
-  style.css
-  script.js
+  public/
+    assets/
+    index.html
+    style.css
+    script.js
   server.js
   package.json
   vercel.json
