@@ -268,18 +268,18 @@
               </div>
               <h3>ExamEcho</h3>
               <p>
-                I led development of an AI-powered examination platform for question generation, rubric generation,
-                answer evaluation, and speech-enabled examination workflows.
+                I lead development of an AI-driven examination platform for generating questions, MCQs, rubrics, and
+                evaluating answers through text and speech-based assessment flows.
               </p>
               <div class="project-metrics">
                 <div><strong>45%</strong><span>Fewer LLM inconsistencies</span></div>
                 <div><strong>4s</strong><span>Optimized response latency</span></div>
               </div>
               <ul class="project-list">
-                <li>Integrated TTS/STT flows for accessible examination interactions.</li>
-                <li>Led a team of 7 developers across backend, AI, and platform delivery.</li>
-                <li>Received an SSIP grant for project deployment and usage within my college.</li>
-                <li>Reduced latency from roughly 8s to 4s through prompt optimization and structured validation.</li>
+                <li>Guided a 7-member team on a funded SSIP build for automated exam creation and evaluation.</li>
+                <li>Built prompt and parsing pipelines that enforce JSON-only outputs, with repair logic to handle malformed responses.</li>
+                <li>Created topic-wise generation flows for questions, 4-option MCQs, weighted rubrics, and viva-style voice assessments.</li>
+                <li>Improved response times from about 8s to 4s by tightening prompts and output validation.</li>
               </ul>
               <div class="tech-stack">
                 <span>LangChain</span><span>HuggingFace</span><span>FastAPI</span><span>React</span>
@@ -287,7 +287,7 @@
               </div>
               <div class="project-actions">
                 <a class="btn btn--small" href="https://github.com/aryanshah2109/STT-TTS-exam-portal" target="_blank" rel="noreferrer">GitHub</a>
-                <a class="btn btn--small btn--ghost" href="https://www.linkedin.com/feed/update/urn:li:activity:7455627571247079424/" target="_blank" rel="noreferrer" aria-label="ExamEcho live demo LinkedIn post">Live Demo</a>
+                <a class="btn btn--small btn--ghost" href="https://examecho.tech/" target="_blank" rel="noreferrer">Live Website</a>
               </div>
             </article>
 
@@ -328,17 +328,17 @@
               </div>
               <h3>GitExplore</h3>
               <p>
-                I am building a GitHub Repository RAG system that enables natural language queries over any
-                public codebase with file, function, and line-level source attribution in answers.
+                I am building an AI-powered GitHub repository RAG system for asking natural-language questions over
+                codebases with grounded answers and file, function, and line-level attribution.
               </p>
               <div class="project-metrics">
                 <div><strong>8</strong><span>Languages chunked with tree-sitter</span></div>
                 <div><strong>Qdrant</strong><span>Vector storage live</span></div>
               </div>
               <ul class="project-list">
-                <li>Built AST-based chunking across 8 languages, extracting functions and classes as atomic semantic units with rich metadata.</li>
-                <li>Completed the ingestion pipeline from GitHub clone to symbol extraction, batch embeddings, and Qdrant vector storage.</li>
-                <li>Now starting retrieval work: evaluation datasets, LLM-as-a-judge scoring, cross-encoder reranking, and hybrid BM25 + dense retrieval with RRF.</li>
+                <li>Implemented AST-aware chunking across 8 languages so functions and classes stay as clean semantic units with metadata.</li>
+                <li>Connected the ingestion flow from GitHub cloning and symbol extraction to batched embeddings and Qdrant storage.</li>
+                <li>Added retrieval and ranking pieces including BM25, dense vector search, RRF fusion, query classification, and judge-based evaluation.</li>
               </ul>
               <div class="tech-stack">
                 <span>Python</span><span>tree-sitter</span><span>Qdrant</span><span>Ollama</span>
