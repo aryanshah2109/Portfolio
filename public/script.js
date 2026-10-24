@@ -42,7 +42,7 @@ navLinks.forEach((link) => {
 });
 
 // Typing animation for the hero title.
-const typingPhrases = ["AI/ML Engineer", "RAG Builder", "MLOps Learner", "FastAPI Developer"];
+const typingPhrases = ["AI/ML Engineer", "GenAI & RAG", "Applied ML", "MLOps"];
 let phraseIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
